@@ -5,13 +5,13 @@ use std::{fs::File, os::unix::net::UnixDatagram, process::exit, str::FromStr};
 
 use clap::{Arg, ArgAction, Command, value_parser};
 use daemonize::Daemonize;
-use defguard_boringtun::device::{DeviceConfig, DeviceHandle, drop_privileges::drop_privileges};
+use xguard_boringtun::device::{DeviceConfig, DeviceHandle, drop_privileges::drop_privileges};
 use tracing::Level;
 
 fn check_tun_name<'a>(v: &str) -> Result<String, &'a str> {
     #[cfg(any(target_os = "macos", target_os = "ios", target_os = "tvos"))]
     {
-        if defguard_boringtun::device::tun::parse_utun_name(v).is_ok() {
+        if xguard_boringtun::device::tun::parse_utun_name(v).is_ok() {
             Ok(v.into())
         } else {
             Err(

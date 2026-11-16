@@ -495,46 +495,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "defguard_boringtun"
-version = "0.7.0"
-dependencies = [
- "aead",
- "base64",
- "blake2",
- "chacha20poly1305",
- "criterion",
- "etherparse",
- "hex",
- "hmac",
- "ip_network",
- "ip_network_table",
- "libc",
- "mock_instant",
- "nix",
- "parking_lot",
- "rand",
- "ring",
- "socket2",
- "thiserror",
- "tracing",
- "tracing-subscriber",
- "uniffi",
- "x25519-dalek",
-]
-
-[[package]]
-name = "defguard_boringtun_cli"
-version = "0.7.0"
-dependencies = [
- "clap",
- "daemonize",
- "defguard_boringtun",
- "tracing",
- "tracing-appender",
- "tracing-subscriber",
-]
-
-[[package]]
 name = "deranged"
 version = "0.5.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1791,6 +1751,46 @@ dependencies = [
  "curve25519-dalek",
  "getrandom 0.4.3",
  "rand_core",
+]
+
+[[package]]
+name = "xguard_boringtun"
+version = "0.7.0"
+dependencies = [
+ "aead",
+ "base64",
+ "blake2",
+ "chacha20poly1305",
+ "criterion",
+ "etherparse",
+ "hex",
+ "hmac",
+ "ip_network",
+ "ip_network_table",
+ "libc",
+ "mock_instant",
+ "nix",
+ "parking_lot",
+ "rand",
+ "ring",
+ "socket2",
+ "thiserror",
+ "tracing",
+ "tracing-subscriber",
+ "uniffi",
+ "x25519-dalek",
+]
+
+[[package]]
+name = "xguard_boringtun_cli"
+version = "0.7.0"
+dependencies = [
+ "clap",
+ "daemonize",
+ "tracing",
+ "tracing-appender",
+ "tracing-subscriber",
+ "xguard_boringtun",
 ]
 
 [[package]]

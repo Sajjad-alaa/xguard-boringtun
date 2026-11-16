@@ -2,9 +2,9 @@
 
 # BoringTun
 
-## Defguard changes
+## XGuard changes
 
-[Defguard](https://defguard.net/) team:
+[XGuard](https://xguard.local/) team:
 
 * Added Swift bindings using [UniFFI](https://mozilla.github.io/uniffi-rs)
 * Updated dependencies and cleaned up the code.

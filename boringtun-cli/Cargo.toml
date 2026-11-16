@@ -1,5 +1,5 @@
 [package]
-name = "defguard_boringtun_cli"
+name = "xguard_boringtun_cli"
 description = "an implementation of the WireGuard® protocol designed for portability and speed"
 version = "0.6.8"
 authors = [
@@ -9,13 +9,13 @@ authors = [
 ]
 license = "BSD-3-Clause"
 readme = "../README.md"
-repository = "https://github.com/defGuard/boringtun"
-documentation = "https://docs.rs/defguard_boringtun"
+repository = "https://github.com/Sajjad-alaa/xguard-boringtun"
+documentation = "https://docs.rs/xguard_boringtun"
 edition = "2024"
 
 [dependencies]
 clap = { version = "4.5", features = ["env"] }
-defguard_boringtun = { path = "../boringtun", version = "0.6", features = ["device"] }
+xguard_boringtun = { path = "../boringtun", version = "0.6", features = ["device"] }
 daemonize = "0.5"
 tracing = "0.1"
 tracing-appender = "0.2"

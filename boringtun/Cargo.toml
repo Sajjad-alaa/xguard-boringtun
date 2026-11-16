@@ -1,5 +1,5 @@
 [package]
-name = "defguard_boringtun"
+name = "xguard_boringtun"
 description = "an implementation of the WireGuard® protocol designed for portability and speed"
 version = "0.6.8"
 rust-version = "1.91.0"
@@ -10,8 +10,8 @@ authors = [
 ]
 license = "BSD-3-Clause"
 readme = "../README.md"
-repository = "https://github.com/defGuard/boringtun"
-documentation = "https://docs.rs/defguard_boringtun"
+repository = "https://github.com/Sajjad-alaa/xguard-boringtun"
+documentation = "https://docs.rs/xguard_boringtun"
 edition = "2024"
 
 [features]
